@@ -34,7 +34,7 @@ for (const file of commandFiles) {
 function checkServerStatus() {
     Gamedig.query({
       type: 'mtasa',
-      host: '185.254.30.119',
+      host: 'mta sunucu ip adresini girin',
       port: '22003'
     }).then((state) => {
       if (state.password) {

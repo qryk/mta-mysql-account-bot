@@ -43,7 +43,7 @@ const channel = client.channels.cache.get(kanalid);
           const exampleEmbed = new EmbedBuilder()
           .setTitle(`Venom Roleplay - Aktif Duyurusu`)
           .setColor("#2B2D31")
-          .setDescription(`MTA sunucumuz şimdi **Aktif** Duruma Geçiş Yaptı, Tüm oyuncularımızı sunucumuza bekliyoruz. Bağlanmak için Aşağıdaki Düğme İle Veya '**185.254.30.119:22003**' İpsi Üzerinden Girş Sağlayabilirsiniz. \n \n **${interaction.user.username}** Yetkilisi Tarafından Duyuruldu!`)
+          .setDescription(`MTA sunucumuz şimdi **Aktif** Duruma Geçiş Yaptı, Tüm oyuncularımızı sunucumuza bekliyoruz. Bağlanmak için Aşağıdaki Düğme İle Veya '**mta sunucu ip adresini girin:22003**' İpsi Üzerinden Girş Sağlayabilirsiniz. \n \n **${interaction.user.username}** Yetkilisi Tarafından Duyuruldu!`)
           .setThumbnail('https://cdn.discordapp.com/attachments/1120121126484451458/1125533980851179680/2.png')
           .setImage('https://cdn.discordapp.com/attachments/1120121126484451458/1125899984085205032/VR1_GIF.gif');
           channel.send({ content: "|| @everyone ||", embeds: [exampleEmbed], components: [row]}).then(() => {
@@ -94,7 +94,7 @@ const channel = client.channels.cache.get(kanalid);
           const exampleEmbed = new EmbedBuilder()
           .setTitle(`Venom Roleplay - Restart Duyurusu`)
           .setColor("#2B2D31")
-          .setDescription(`MTA sunucumuz şuanda teknik nedenlerden dolayı **Restartlandı**, Sunucumuza '**185.254.30.119:22003**' İpsi Üzerinden Veya Alttaki Düğmeden Giriş Sağlayabilirsiniz. \n \n **${interaction.user.username}** Yetkilisi Tarafından Duyuruldu!`)
+          .setDescription(`MTA sunucumuz şuanda teknik nedenlerden dolayı **Restartlandı**, Sunucumuza '**mta sunucu ip adresini girin:22003**' İpsi Üzerinden Veya Alttaki Düğmeden Giriş Sağlayabilirsiniz. \n \n **${interaction.user.username}** Yetkilisi Tarafından Duyuruldu!`)
           .setThumbnail('https://cdn.discordapp.com/attachments/1120121126484451458/1125533980851179680/2.png')
           .setImage('https://cdn.discordapp.com/attachments/1120121126484451458/1125899984085205032/VR1_GIF.gif');
           channel.send({ content: "|| @everyone ||", embeds: [exampleEmbed], components: [row]}).then(() => {
