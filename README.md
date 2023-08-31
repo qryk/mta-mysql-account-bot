@@ -1,4 +1,4 @@
-# mta-maysql-account-bot
+# mta-mysql-account-bot
  Mta için hesap eşleştirme botu
  ---------------------
  1.adım: npm i
