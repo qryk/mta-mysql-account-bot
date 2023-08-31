@@ -1,7 +1,7 @@
 # mta-maysql-account-bot
  Mta için hesap eşleştirme botu
  ---------------------
- 1.adım: npm i
+ 1.adım: npm i\n
  2.adım: config.js dosyasını doldurun
  3.adım: dosyaların içindeki mysql bağalantı ayarlarını girin
  4.adım: mail adresinizi girin denieln kısımlara mail gönderecek mail adresini giriniz
