@@ -41,61 +41,6 @@ module.exports = {
           .setColor("#2B2D31")
           .setTitle("Panel başarıyla kanala gönderildi.");
         interaction.reply({ embeds: [panel], ephemeral: true});
-        const mysql = require('mysql');
-
-const connectionConfig = {
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'database ismini girin'
-};
-
-// characters tablosundan account değeri 198123 olan karakterlerin verilerini alıp yazdırma
-function getCharacters() {
-  const connection = mysql.createConnection(connectionConfig);
-
-  const accountValue = '18215';
-  const query = `SELECT charactername, skin, hoursplayed, id FROM characters WHERE account = ?`;
-
-  connection.query(query, [accountValue], (error, results) => {
-    if (error) {
-      console.error('Sorgu hatası:', error);
-      connection.end();
-      return;
-    }
-
-    results.forEach((character) => {
-      const characterData = `Character: ${character.charactername}, Skin: ${character.skin}, Hours Played: ${character.hoursplayed}, id: ${character.id}`;
-
-      getVehicleIds(character.id, characterData);
-    });
-
-    connection.end();
-  });
-}
-
-// vehicles tablosunda id'i owner sütununda aratarak vehicle ID'lerini alıp karakter verileriyle birlikte yazdırma
-function getVehicleIds(id, characterData) {
-  const connection = mysql.createConnection(connectionConfig);
-
-  const query = `SELECT id FROM vehicles WHERE owner = ?`;
-
-  connection.query(query, [id], (error, results) => {
-    if (error) {
-      console.error('Sorgu hatası:', error);
-      connection.end();
-      return;
-    }
-
-    const vehicleIds = results.map((row) => row.vehicleid).join(',');
-    console.log(`${characterData}, Vehicle IDs: ${vehicleIds}`);
-
-    connection.end();
-  });
-}
-
-// Ana işlemi gerçekleştirme
-getCharacters();
 
       })
     }
